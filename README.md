@@ -1,18 +1,28 @@
 # 029 List Task Descriptions
 
-[![029 Task App](https://img.youtube.com/vi/yTrDWBbl3E4/0.jpg)](https://www.youtube.com/watch?v=yTrDWBbl3E4)
-
-[![030 User Stories](https://img.youtube.com/vi/uROJmuBtiJ0/0.jpg)](https://www.youtube.com/watch?v=uROJmuBtiJ0)
+```
+Given that a new task is created 
+When I list the tasks 
+Then I will see the task status of 'todo' is displayed to the right of the task description
+```
 
 ```
-Given that three tasks exist  
-When I load the task app  
-Then I will see all three tasks listed on separate lines
+Given that a task is started
+When I list the tasks  
+Then I will see the task status of 'doing' is displayed to the right of the task description
+```
+
+```
+Given that a task is completed
+When I list the tasks  
+Then I will see the task status of 'done' is displayed to the right of the task description
 ```
 
 Steps:
-- Add three tasks to the tasks div element.
-- Identify each task with the unique id's of task-description-1 , task-description-2, task-description-3 .
+- Identify each task status with the unique id's of task-status-1 , task-status-2, task-status-3.
+- Display the task description followed by the status in the same line.
+- Pad the task description and status with 5px on all sides.
 
 Resources:
-- https://www.w3schools.com/html/html_id.asp
+- https://www.w3schools.com/css/css3_flexbox.asp
+- https://www.w3schools.com/css/css_padding.asp
